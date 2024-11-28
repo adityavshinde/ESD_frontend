@@ -79,7 +79,7 @@ const StudentPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-teal-800">
+    <div className="min-h-screen bg-gray-000">
       {/* Navbar */}
       <Navbar name={student.firstName} email={student.email} />
 
@@ -95,17 +95,17 @@ const StudentPage = () => {
           ) : (
             <table className="table-auto w-full mt-4 border-collapse border border-gray-300">
               <thead>
-                <tr className="bg-gray-400">
-                  <th className="border border-gray-900 px-4 py-2">Description</th>
-                  <th className="border border-gray-900 px-4 py-2">Total Amount</th>
-                  <th className="border border-gray-900 px-4 py-2">Bill Date</th>
-                  <th className="border border-gray-900 px-4 py-2">Deadline Date</th>
-                  <th className="border border-gray-900 px-4 py-2">Pay</th>
+                <tr className="bg-blue-900">
+                  <th className="border border-gray-900 px-4 py-2 text-gray-100">Description</th>
+                  <th className="border border-gray-900 px-4 py-2 text-gray-100">Total Amount</th>
+                  <th className="border border-gray-900 px-4 py-2 text-gray-100">Bill Date</th>
+                  <th className="border border-gray-900 px-4 py-2 text-gray-100">Deadline Date</th>
+                  <th className="border border-gray-900 px-4 py-2 text-gray-100">Pay</th>
                 </tr>
               </thead>
               <tbody>
                 {bills.map((bill) => (
-                  <tr key={bill.billId} className="bg-teal-500">
+                  <tr key={bill.billId} className="bg-blue-200">
                     <td className="border border-gray-900 px-4 py-2">{bill.description}</td>
                     <td className="border border-gray-900 px-4 py-2">{bill.amount}</td>
                     <td className="border border-gray-900 px-4 py-2">{bill.billDate}</td>

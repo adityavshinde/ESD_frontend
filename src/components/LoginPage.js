@@ -28,7 +28,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-gray-500 to-teal-600 items-center justify-center">
+    <div className="flex min-h-screen bg-gradient-to-br from-gray-500 to-blue-600 items-center justify-center">
       <div className="w-full max-w-sm bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-3xl font-bold text-center text-black-800 mb-6">Student Login</h2>
 
@@ -65,7 +65,7 @@ const LoginPage = () => {
         {/* Login Button */}
         <button
           onClick={handleLogin}
-          className="w-full bg-teal-500 hover:bg-gray-600 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out"
+          className="w-full bg-blue-900 hover:bg-gray-800 text-white py-2 px-4 rounded-md transition duration-300 ease-in-out"
         >
           Login
         </button>

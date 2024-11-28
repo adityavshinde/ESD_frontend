@@ -9,16 +9,16 @@ const PaymentHistory = ({ payments }) => {
       ) : (
         <table className="table-auto w-full mt-4 border-collapse border border-gray-300">
           <thead>
-            <tr className="bg-gray-400">
-              <th className="border border-gray-900 px-4 py-2">Payment ID</th>
-              <th className="border border-gray-900 px-4 py-2">Payment Description</th>
-              <th className="border border-gray-900 px-4 py-2">Amount Paid</th>
-              <th className="border border-gray-900 px-4 py-2">Payment Date</th>
+            <tr className="bg-blue-900">
+              <th className="border border-gray-900 px-4 py-2 text-gray-100">Payment ID</th>
+              <th className="border border-gray-900 px-4 py-2 text-gray-100">Payment Description</th>
+              <th className="border border-gray-900 px-4 py-2 text-gray-100">Amount Paid</th>
+              <th className="border border-gray-900 px-4 py-2 text-gray-100">Payment Date</th>
             </tr>
           </thead>
           <tbody>
             {payments.map((payment) => (
-              <tr key={payment.paymentId} className="bg-teal-500">
+              <tr key={payment.paymentId} className="bg-blue-200">
                 <td className="border border-gray-900 px-4 py-2">{payment.paymentId}</td>
                 <td className="border border-gray-900 px-4 py-2">{payment.Description}</td>
                 <td className="border border-gray-900 px-4 py-2">₹{payment.amount}</td>
